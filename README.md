@@ -34,7 +34,7 @@ If the enviroments are already installed, please jump to the next section.
 
 Create a directory for each network and change your otu_table to look like `example`.
 
-You will need to have the [fastspar.sh](x) code in the master directory.
+You will need to have the [fastspar.sh](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/fastspar.sh) code in the master directory.
 
 Now run the code bellow:
 
@@ -51,9 +51,9 @@ Now run the code bellow:
 
 Leave this process running, depending on how many files you have it make take some time.
 
-Now, we need to change some column names in 2 files in each directory `median_correlation2.tsv` and `pvalues2.tsv`. You will need to have the [rename_columns.sh](x) in the master directory.
+Now, we need to change some column names in 2 files in each directory `median_correlation2.tsv` and `pvalues2.tsv`. You will need to have the [rename_columns.sh](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/rename_columns.sh) in the master directory.
 
-Therefore, run the [rename_columns.sh](x) in the master directory.
+Therefore, run the [rename_columns.sh](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/rename_columns.sh) in the master directory.
 
 <!-- -->
     ## Run the rename columns code
@@ -65,7 +65,7 @@ Now, we will activate the python environment
     ## Activate the python environment
     conda activate py27
 
-In order to filter the significant correlations we will use the [get_significant_pairs.py](x) in all directories. Therefore, you will need to have [get_significant_pairs.py](x) code in the master directory.
+In order to filter the significant correlations we will use the [get_significant_pairs.py](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/get_significant_pairs.py) in all directories. Therefore, you will need to have [get_significant_pairs.py](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/get_significant_pairs.py) code in the master directory.
 
 <!-- -->
     ## Run the get_significant_pairs in all directories
@@ -74,17 +74,17 @@ In order to filter the significant correlations we will use the [get_significant
         (cd "$dir" && python2.7 ../get_significant_pairs.py)
     done
 
-The final file is selected_cor.csv. You can run the [rename_selected_cor.sh](x) to rename each final file to the network directory name. Example: `b1.csv`.
+The final file is selected_cor.csv. You can run the [rename_selected_cor.sh](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/rename_selected_cor.sh) to rename each final file to the network directory name. Example: `b1.csv`.
 
 <!-- -->
     ## Run the rename_selected_cor to change the directories names
     ./rename_selected_cor.sh
 
-Now, there are some sofwares (e.g. gephi) that do not accept negative values in the weight of networks. Therefore, if you want, there is a code to add +1 in all weights and solve this problemn. You need to run the [adjust_weights.sh](x).
+Now, there are some sofwares (e.g. gephi) that do not accept negative values in the weight of networks. Therefore, if you want, there is a code to add +1 in all weights and solve this problemn. You need to run the [adjust_weights.sh](https://github.com/DpennaS/Co-occurrence-Networks-SparCC-tutorial/blob/main/docs/adjust_weights.sh).
 
 <!-- -->
     ## Run the adjust_weights to adjust the weight from networks with +1
     ./adjust_weights.sh
 
-Your final files should be selected_cor.csv and name_cor_modified.csv. The `name` should be the network directory name, if you used the adjust_weights.sh code.
+Your final files should be name.csv and name_cor_modified.csv. The `name` should be the network directory name, if you used the adjust_weights.sh code.
 
