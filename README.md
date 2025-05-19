@@ -4,7 +4,7 @@
 # Co-occurrence-Networks-SparCC-tutorial
 A framework and tutorial for building co-occurrence networks for bacterial communities using SparCC algorithm
 
-# Building co-occurrence networks using bash and python <img src="imgs/gemm-hex.png" align="right" width = "120px"/>
+# Building co-occurrence networks using bash and python
 
 This framework is a tutorial for building co-occurrence networks for bacterial communities using the Sparse Correlations for Compositional Data ([SparCC](https://doi.org/10.1371/journal.pcbi.1002687)).
 
