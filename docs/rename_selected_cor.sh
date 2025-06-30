@@ -2,7 +2,7 @@
 
 for pasta in */ ; do
     nome=$(basename "$pasta")
-    arquivo_csv="${pasta}${nome}.csv"
+    arquivo_csv="${pasta}selected_cor.csv"
     arquivo_saida="${pasta}${nome}_cor_modified.csv"
 
     if [ -f "$arquivo_csv" ]; then
@@ -24,4 +24,3 @@ for pasta in */ ; do
         echo "Arquivo não encontrado: $arquivo_csv"
     fi
 done
-
