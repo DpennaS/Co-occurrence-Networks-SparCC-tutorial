@@ -1,7 +1,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
-# Co-occurrence-Networks-SparCC-tutorial
+# Bacterial Co-occurrence-Networks-SparCC-tutorial
 A framework and tutorial for building co-occurrence networks for bacterial communities using SparCC algorithm
 
 # Building co-occurrence networks using bash and python
